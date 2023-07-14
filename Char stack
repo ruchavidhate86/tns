@@ -18,25 +18,25 @@ class Stack{
             data[++top]=element;
     }
     
-    int pop(){
+    char pop(){
         if (isEmpty()==1)
             return -1;
         else
             return data[top--];
     }
-     int isEmpty(){
+     char isEmpty(){
         if (top==-1)
             return 1;
         else
             return 0;
     }
-    int isFull(){
+    char isFull(){
         if (top==SIZE-1)
             return 1;
         else
             return 0;
     }
-    int peek(){
+    char peek(){
         if (isEmpty()==1)
             return -1;
         return data[top];
